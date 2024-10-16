@@ -10,7 +10,7 @@ RSpec.describe Brcobranca::Boleto::Safra do
       cedente: 'Kivanio Barbosa',
       documento_cedente: '12345678912',
       sacado: 'Claudio Pozzebom',
-      sacado_documento: '12345678900',
+      documento_sacado: '12345678900',
       agencia: '4042',
       agencia_dv: '8',
       conta_corrente: '61900',
@@ -51,7 +51,7 @@ RSpec.describe Brcobranca::Boleto::Safra do
     expect(boleto_novo.cedente).to eql('Kivanio Barbosa')
     expect(boleto_novo.documento_cedente).to eql('12345678912')
     expect(boleto_novo.sacado).to eql('Claudio Pozzebom')
-    expect(boleto_novo.sacado_documento).to eql('12345678900')
+    expect(boleto_novo.documento_sacado).to eql('12345678900')
     expect(boleto_novo.conta_corrente).to eql('00061900')
     expect(boleto_novo.conta_corrente_dv).to eql('7')
     expect(boleto_novo.agencia).to eql('4042')
