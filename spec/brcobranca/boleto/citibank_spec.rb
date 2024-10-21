@@ -10,7 +10,7 @@ RSpec.describe Brcobranca::Boleto::Citibank do # :nodoc:[all]
       cedente: 'Kivanio Barbosa',
       documento_cedente: '12345678912',
       sacado: 'Claudio Pozzebom',
-      sacado_documento: '12345678900',
+      documento_sacado: '12345678900',
       agencia: '1825',
       conta_corrente: '0000528',
       convenio: '0123456789',
@@ -35,7 +35,7 @@ RSpec.describe Brcobranca::Boleto::Citibank do # :nodoc:[all]
     expect(boleto_novo.cedente).to eql('Kivanio Barbosa')
     expect(boleto_novo.documento_cedente).to eql('12345678912')
     expect(boleto_novo.sacado).to eql('Claudio Pozzebom')
-    expect(boleto_novo.sacado_documento).to eql('12345678900')
+    expect(boleto_novo.documento_sacado).to eql('12345678900')
     expect(boleto_novo.conta_corrente).to eql('0000528')
     expect(boleto_novo.agencia).to eql('1825')
     expect(boleto_novo.convenio).to eql('0123456789')

@@ -9,7 +9,7 @@ RSpec.describe 'Muúltiplos boletos' do # :nodoc:[all]
       cedente: 'Kivanio Barbosa',
       documento_cedente: '12345678912',
       sacado: 'Claudio Pozzebom',
-      sacado_documento: '12345678900',
+      documento_sacado: '12345678900',
       agencia: '4042',
       conta_corrente: '61900',
       convenio: 12_387_989,

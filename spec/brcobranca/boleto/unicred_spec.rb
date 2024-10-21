@@ -11,7 +11,7 @@ RSpec.describe Brcobranca::Boleto::Unicred do
       cedente: 'Kivanio Barbosa',
       documento_cedente: '12345678912',
       sacado: 'Claudio Pozzebom',
-      sacado_documento: '12345678900',
+      documento_sacado: '12345678900',
       agencia: '4042',
       conta_corrente: '61900',
       conta_corrente_dv: '7',
@@ -51,7 +51,7 @@ RSpec.describe Brcobranca::Boleto::Unicred do
     expect(boleto_novo.cedente).to eql('Kivanio Barbosa')
     expect(boleto_novo.documento_cedente).to eql('12345678912')
     expect(boleto_novo.sacado).to eql('Claudio Pozzebom')
-    expect(boleto_novo.sacado_documento).to eql('12345678900')
+    expect(boleto_novo.documento_sacado).to eql('12345678900')
     expect(boleto_novo.conta_corrente).to eql('000061900')
     expect(boleto_novo.agencia).to eql('4042')
     expect(boleto_novo.nosso_numero).to eql('0000000168')

@@ -159,7 +159,7 @@ module Brcobranca
           doc.show boleto.descontos_e_abatimentos&.to_currency
 
           move_more(doc, 0.8, -0.55)
-          doc.show "#{boleto.sacado} - #{boleto.sacado_documento.formata_documento}"
+          doc.show "#{boleto.sacado} - #{boleto.documento_sacado.formata_documento}"
 
           move_more(doc, 0, -0.3)
           doc.show boleto.sacado_endereco.to_s
@@ -268,8 +268,8 @@ module Brcobranca
           end
 
           move_more(doc, 0.5, -1.9)
-          if boleto.sacado && boleto.sacado_documento
-            sacado_info = "#{boleto.sacado} - CPF/CNPJ: #{boleto.sacado_documento.formata_documento}"
+          if boleto.sacado && boleto.documento_sacado
+            sacado_info = "#{boleto.sacado} - CPF/CNPJ: #{boleto.documento_sacado.formata_documento}"
             doc.show sacado_info
           end
 

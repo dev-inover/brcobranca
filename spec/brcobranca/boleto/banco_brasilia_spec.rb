@@ -9,7 +9,7 @@ RSpec.describe Brcobranca::Boleto::BancoBrasilia do # :nodoc:[all]
       cedente: 'PREFEITURA MUNICIPAL DE VILHENA',
       documento_cedente: '04092706000181',
       sacado: 'João Paulo Barbosa',
-      sacado_documento: '77777777777',
+      documento_sacado: '77777777777',
       agencia: '082',
       conta_corrente: '0000528',
       nosso_numero: '000001'

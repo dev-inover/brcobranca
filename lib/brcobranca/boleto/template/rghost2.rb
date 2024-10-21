@@ -212,7 +212,7 @@ module Brcobranca
           doc.moveto x: 7.26640, y: 10.56058
           doc.show boleto.especie
           monta_instrucoes(doc, boleto, 0.8, 9.8)
-          pagador = "<menor>#{truncar(boleto.sacado, 75)} - CPF/CNPJ: #{boleto.sacado_documento.formata_documento}</menor>"
+          pagador = "<menor>#{truncar(boleto.sacado, 75)} - CPF/CNPJ: #{boleto.documento_sacado.formata_documento}</menor>"
           pagador += "\n<menor>#{boleto.sacado_endereco}</menor>" if boleto.sacado_endereco
           doc.text_area pagador, width: 18, text_align: :left, x: 2.04611, y: 5.8, row_height: '0.4 cm'
           if boleto.avalista && boleto.avalista_documento
